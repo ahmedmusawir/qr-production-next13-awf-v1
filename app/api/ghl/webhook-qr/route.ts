@@ -22,6 +22,13 @@ import { extractWebhookData } from "./dataExtraction";
 import { generateQRCode } from "@/utils/qrapp/helpers";
 import { updateGHLField } from "./updateGHLField";
 
+export async function GET(req: NextRequest) {
+  return NextResponse.json(
+    { message: "GET request successful" },
+    { status: 200 }
+  );
+}
+
 // Handle the POST request
 export async function POST(req: NextRequest) {
   try {
