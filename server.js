@@ -66,9 +66,9 @@ app.prepare().then(() => {
     return handle(req, res);
   });
 
-  httpServer.listen(4001, (err) => {
+  httpServer.listen(4004, (err) => {
     if (err) throw err;
-    console.log("Server running on http://localhost:4001");
-    console.log("Socket.IO server running on ws://localhost:4001");
+    console.log("Server running on http://localhost:4004");
+    console.log("Socket.IO server running on ws://localhost:4004");
   });
 });
