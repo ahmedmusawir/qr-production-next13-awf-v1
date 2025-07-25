@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export async function GET() {
   try {
     const response = await fetch(
-      `https://services.leadconnectorhq.com/locations/4rKuULHASyQ99nwdL1XH/customFields`,
+      `https://services.leadconnectorhq.com/locations/${process.env.NEXT_PUBLIC_GHL_LOCATION_ID}/customFields`,
       {
         headers: {
           Authorization: `Bearer ${process.env.GHL_ACCESS_TOKEN}`,

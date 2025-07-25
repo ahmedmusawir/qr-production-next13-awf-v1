@@ -6,7 +6,7 @@ export const fetchGhlOrderList = async () => {
   const GHL_ACCESS_TOKEN = process.env.GHL_ACCESS_TOKEN;
 
   const response = await fetch(
-    "https://services.leadconnectorhq.com/payments/orders?altId=4rKuULHASyQ99nwdL1XH&altType=location",
+    `https://services.leadconnectorhq.com/payments/orders?altId=${process.env.NEXT_PUBLIC_GHL_LOCATION_ID}&altType=location`,
     {
       headers: {
         Authorization: `Bearer ${GHL_ACCESS_TOKEN}`,
@@ -33,7 +33,7 @@ export const fetchGhlOrderDetails = async (orderId: string) => {
   const GHL_ACCESS_TOKEN = process.env.GHL_ACCESS_TOKEN;
 
   const response = await fetch(
-    `https://services.leadconnectorhq.com/payments/orders/${orderId}?altId=4rKuULHASyQ99nwdL1XH&altType=location`,
+    `https://services.leadconnectorhq.com/payments/orders/${orderId}?altId=${process.env.NEXT_PUBLIC_GHL_LOCATION_ID}&altType=location`,
     {
       headers: {
         Authorization: `Bearer ${GHL_ACCESS_TOKEN}`,

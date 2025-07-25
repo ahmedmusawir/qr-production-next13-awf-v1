@@ -9,7 +9,7 @@ export async function GET(request: Request) {
 
   try {
     const response = await fetch(
-      `https://services.leadconnectorhq.com/products/?locationId=4rKuULHASyQ99nwdL1XH`,
+      `https://services.leadconnectorhq.com/products/?locationId=${process.env.NEXT_PUBLIC_GHL_LOCATION_ID}`,
       {
         headers: {
           Authorization: `Bearer ${process.env.GHL_ACCESS_TOKEN}`,
