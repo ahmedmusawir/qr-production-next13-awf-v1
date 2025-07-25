@@ -1,9 +1,9 @@
 {
-  "syncInProgress": true,
-  "totalOrders": 18,
-  "syncedOrders": 0,
-  "status": "Syncing",
+  "syncInProgress": false,
+  "totalOrders": 3,
+  "syncedOrders": 3,
+  "status": "Complete",
   "delay_in_sec": 0,
-  "startTime": "2025-07-25T02:15:47.771Z",
-  "endTime": "2025-07-23T03:55:57.514Z"
+  "startTime": "2025-07-25T06:38:13.271Z",
+  "endTime": "2025-07-25T06:38:17.262Z"
 }

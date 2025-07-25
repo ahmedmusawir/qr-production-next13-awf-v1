@@ -1,0 +1,28 @@
+[2025-07-25 14:22:33] INFO: Broadcasted initial sync status:
+[2025-07-25 14:22:33] INFO: [Valid Order IDs]:
+[2025-07-25 14:22:33] INFO: [Starting sync for Order ID: 6878082ba021e7bb70853f2a]
+[2025-07-25 14:22:36] INFO: Broadcasted sync progress (Orders):
+[2025-07-25 14:22:36] INFO: [Starting sync for Order ID: 6877f44e51aa4549423a6462]
+[2025-07-25 14:22:37] INFO: Broadcasted sync progress (Orders):
+[2025-07-25 14:22:37] INFO: [Starting sync for Order ID: 6877f40e8b72e27a4ba3da5a]
+[2025-07-25 14:22:38] INFO: Broadcasted sync progress (Orders):
+[2025-07-25 14:22:39] INFO: [Inserting missing Just You ticket for order 6878082ba021e7bb70853f2a]
+[2025-07-25 14:22:40] INFO: Broadcasted sync ticket progress:
+[2025-07-25 14:22:40] INFO: [Inserting missing You + 1 Guest ticket for order 6878082ba021e7bb70853f2a]
+[2025-07-25 14:22:40] INFO: Broadcasted sync ticket progress:
+[2025-07-25 14:22:40] INFO: Broadcasted sync progress:
+[2025-07-25 14:22:41] INFO: [Inserting missing Corporate Patron: $1,000 ticket for order 6877f44e51aa4549423a6462]
+[2025-07-25 14:22:41] INFO: Broadcasted sync ticket progress:
+[2025-07-25 14:22:41] INFO: Broadcasted sync progress:
+[2025-07-25 14:22:41] INFO: [Inserting missing Corporate Patron: $1,000 ticket for order 6877f40e8b72e27a4ba3da5a]
+[2025-07-25 14:22:41] INFO: Broadcasted sync ticket progress:
+[2025-07-25 14:22:41] INFO: Broadcasted sync progress:
+[2025-07-25 14:22:41] INFO: Broadcasted ticket verification phase started.
+[2025-07-25 14:22:42] INFO: 
+      =============================================
+      SYNC PROCESS SUCCESSFUL!
+      TOTAL ORDERS SYNCED: 3
+      TOTAL TICKETS ADDED: 4
+      TOTAL TIME TAKEN: 0 min 8 sec
+      =============================================
+    
