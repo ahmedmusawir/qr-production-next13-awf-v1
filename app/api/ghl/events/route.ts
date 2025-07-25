@@ -30,6 +30,13 @@ import { NextRequest, NextResponse } from "next/server";
 
 // Fetch product data from GHL API
 async function fetchProductIds(locationId: string) {
+    // 🔍 DEBUG: Log environment variables
+  console.log("🔍 DEBUG - Environment Check:");
+  console.log("GHL_ACCESS_TOKEN exists:", !!process.env.GHL_ACCESS_TOKEN);
+  console.log("GHL_ACCESS_TOKEN length:", process.env.GHL_ACCESS_TOKEN?.length);
+  console.log("GHL_ACCESS_TOKEN first 10 chars:", process.env.GHL_ACCESS_TOKEN?.substring(0, 10));
+  console.log("Location ID:", locationId);
+
   const apiUrl = `https://services.leadconnectorhq.com/products/?locationId=${locationId}`;
 
   const response = await fetch(apiUrl, {
@@ -46,6 +53,7 @@ async function fetchProductIds(locationId: string) {
   }
 
   const data = await response.json();
+  console.log('PRODUCTION EVEN DATA MOOSE EVEN ROUTE.TS', data)
   return data.products.map((product: { _id: string }) => product._id);
 }
 

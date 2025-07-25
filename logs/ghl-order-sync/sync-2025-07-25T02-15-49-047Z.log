@@ -1,0 +1,4 @@
+[2025-07-25 10:15:49] INFO: Broadcasted initial sync status:
+[2025-07-25 10:15:49] INFO: [Valid Order IDs]:
+[2025-07-25 10:15:49] INFO: [Starting sync for Order ID: 66c5f91c83400668a74b54b6]
+[2025-07-25 10:15:49] ERROR: [Error during sync: Error fetching order details: Forbidden]
