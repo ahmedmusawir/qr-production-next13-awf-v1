@@ -1,0 +1,24 @@
+[2025-07-28 08:19:23] INFO: Broadcasted initial sync status:
+[2025-07-28 08:19:23] INFO: [Valid Order IDs]:
+[2025-07-28 08:19:23] INFO: [Starting sync for Order ID: 6878082ba021e7bb70853f2a]
+[2025-07-28 08:19:23] INFO: Broadcasted sync progress (Orders):
+[2025-07-28 08:19:23] INFO: [Starting sync for Order ID: 6877f44e51aa4549423a6462]
+[2025-07-28 08:19:26] INFO: Broadcasted sync progress (Orders):
+[2025-07-28 08:19:26] INFO: [Starting sync for Order ID: 6877f40e8b72e27a4ba3da5a]
+[2025-07-28 08:19:26] INFO: Broadcasted sync progress (Orders):
+[2025-07-28 08:19:27] INFO: Broadcasted sync ticket progress:
+[2025-07-28 08:19:27] INFO: Broadcasted sync ticket progress:
+[2025-07-28 08:19:27] INFO: Broadcasted sync progress:
+[2025-07-28 08:19:27] INFO: Broadcasted sync ticket progress:
+[2025-07-28 08:19:27] INFO: Broadcasted sync progress:
+[2025-07-28 08:19:28] INFO: Broadcasted sync ticket progress:
+[2025-07-28 08:19:28] INFO: Broadcasted sync progress:
+[2025-07-28 08:19:28] INFO: Broadcasted ticket verification phase started.
+[2025-07-28 08:19:28] INFO: 
+      =============================================
+      SYNC PROCESS SUCCESSFUL!
+      TOTAL ORDERS SYNCED: 3
+      TOTAL TICKETS ADDED: 0
+      TOTAL TIME TAKEN: 0 min 5 sec
+      =============================================
+    

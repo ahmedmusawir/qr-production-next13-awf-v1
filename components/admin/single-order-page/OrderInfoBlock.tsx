@@ -10,6 +10,7 @@ interface ProcessedData {
 
 // Utility function to transform ticket_quantities
 const processTicketQuantities = (ticketQuantities: Record<string, number>) => {
+  console.log("ticketQueantities [OrderInfoBlock]", ticketQuantities);
   const result: any = {}; // Flexible object to store data
   let index = 1;
 
@@ -33,6 +34,7 @@ const OrderInfoBlock = ({ order }: OrderProps) => {
     order.ticket_quantities
   );
 
+  console.log("Processed Data [OrderInfoBlock]", processedData);
   return (
     <>
       {/* Large Screen Layout (Double-Column) */}
