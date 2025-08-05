@@ -15,6 +15,11 @@ interface FieldSelectorProps {
 const FieldSelector = ({ onFieldSelect }: FieldSelectorProps) => {
   const { fields } = useGHLDataStore();
 
+  // Filter fields to only include those with "QR Code" in the name
+  const filteredFields = fields.filter((field) =>
+    field.field_name.includes("QR Code")
+  );
+
   return (
     <Select
       onValueChange={(value) => {
@@ -37,7 +42,7 @@ const FieldSelector = ({ onFieldSelect }: FieldSelectorProps) => {
         <SelectGroup>
           <SelectItem value="no_field">No Field</SelectItem>{" "}
           {/* "No Field" option */}
-          {fields.map((field) => (
+          {filteredFields.map((field) => (
             <SelectItem key={field.field_id} value={field.field_id}>
               {field.field_name}
             </SelectItem>

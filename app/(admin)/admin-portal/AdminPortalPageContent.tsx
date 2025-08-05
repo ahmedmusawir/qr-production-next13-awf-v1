@@ -1,3 +1,4 @@
+// Add to AdminPortalPageContent.tsx
 "use client";
 import React, { useEffect, useState } from "react";
 import Page from "@/components/common/Page";
@@ -10,6 +11,8 @@ import AdminEventList from "@/components/admin/AdminEventList";
 import { useGHLDataStore } from "@/store/useGHLDataStore";
 import { fetchCustomFields } from "@/services/fieldServices";
 import SyncButtonBlock from "@/components/admin/sync-button/SyncButtonBlock";
+import { Button } from "@/components/ui/button";
+import { RefreshCw } from "lucide-react";
 
 const AdminPortalPageContent = () => {
   const { setEvents, setFields } = useGHLDataStore();
@@ -17,26 +20,35 @@ const AdminPortalPageContent = () => {
   const [pageSize] = useState(4);
   const [isLoading, setIsLoading] = useState(true);
   const [totalPages, setTotalPages] = useState(0);
+  const [refreshing, setRefreshing] = useState(false);
 
+  const loadEventsAndFields = async () => {
+    try {
+      setIsLoading(true);
+      const eventsData = await fetchEvents(currentPage, pageSize);
+      setEvents(eventsData.events);
+      setTotalPages(eventsData.pagination.totalPages);
+
+      const fieldsData = await fetchCustomFields();
+      setFields(fieldsData);
+    } catch (error) {
+      console.error("Failed to fetch data:", error);
+    } finally {
+      setIsLoading(false);
+      setRefreshing(false);
+    }
+  };
+
+  // Initial load
   useEffect(() => {
-    const loadEventsAndFields = async () => {
-      try {
-        setIsLoading(true);
-        const eventsData = await fetchEvents(currentPage, pageSize);
-        setEvents(eventsData.events);
-        setTotalPages(eventsData.pagination.totalPages);
-
-        const fieldsData = await fetchCustomFields();
-        setFields(fieldsData);
-      } catch (error) {
-        console.error("Failed to fetch data:", error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
     loadEventsAndFields();
   }, [currentPage, pageSize]);
+
+  // Function to handle manual refresh
+  const handleRefresh = async () => {
+    setRefreshing(true);
+    await loadEventsAndFields();
+  };
 
   return (
     <>
@@ -49,8 +61,22 @@ const AdminPortalPageContent = () => {
           <section className="sync-btn-section">
             <SyncButtonBlock />
           </section>
-          <h1 className="">Admin Portal</h1>
+          <div className="flex justify-between items-center">
+            <h1 className="">Admin Portal</h1>
+          </div>
           <h2 className="mt-[-1.5rem]">Events list:</h2>
+          <Button
+            onClick={handleRefresh}
+            disabled={refreshing || isLoading}
+            variant="outline"
+            size="sm"
+            className="mb-5"
+          >
+            <RefreshCw
+              className={`h-4 w-4 mr-2 ${refreshing ? "animate-spin" : ""}`}
+            />
+            Refresh Fields
+          </Button>
 
           {isLoading ? <Spinner /> : <AdminEventList />}
           <AdminPagination
