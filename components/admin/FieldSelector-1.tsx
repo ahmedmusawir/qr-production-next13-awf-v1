@@ -20,12 +20,6 @@ const FieldSelector = ({ onFieldSelect }: FieldSelectorProps) => {
     field.field_name.includes("QR Code")
   );
 
-  // Debug logging
-  console.log("FieldSelector - All fields:", fields);
-  console.log("FieldSelector - Filtered fields:", filteredFields);
-  console.log("FieldSelector - Fields count:", fields.length);
-  console.log("FieldSelector - Filtered count:", filteredFields.length);
-
   return (
     <Select
       onValueChange={(value) => {
@@ -46,18 +40,13 @@ const FieldSelector = ({ onFieldSelect }: FieldSelectorProps) => {
       </SelectTrigger>
       <SelectContent className="bg-white">
         <SelectGroup>
-          <SelectItem value="no_field">No Field</SelectItem>
-          {filteredFields.length === 0 ? (
-            <SelectItem value="no_fields_found" disabled>
-              No QR Code fields found
+          <SelectItem value="no_field">No Field</SelectItem>{" "}
+          {/* "No Field" option */}
+          {filteredFields.map((field) => (
+            <SelectItem key={field.field_id} value={field.field_id}>
+              {field.field_name}
             </SelectItem>
-          ) : (
-            filteredFields.map((field) => (
-              <SelectItem key={field.field_id} value={field.field_id}>
-                {field.field_name}
-              </SelectItem>
-            ))
-          )}
+          ))}
         </SelectGroup>
       </SelectContent>
     </Select>

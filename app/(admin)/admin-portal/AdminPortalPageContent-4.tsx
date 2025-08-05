@@ -11,7 +11,7 @@ import { useGHLDataStore } from "@/store/useGHLDataStore";
 import { fetchCustomFields } from "@/services/fieldServices";
 import SyncButtonBlock from "@/components/admin/sync-button/SyncButtonBlock";
 import { Button } from "@/components/ui/button";
-import { RefreshCw, RotateCcw } from "lucide-react";
+import { RefreshCw } from "lucide-react";
 
 // Define types for the custom fields
 interface GHLCustomField {
@@ -161,26 +161,6 @@ const AdminPortalPageContent = () => {
     }
   };
 
-  // Nuclear option: Force a complete page reload with cache busting
-  const forcePageReload = () => {
-    // Clear all possible caches
-    if ("caches" in window) {
-      caches.keys().then((names) => {
-        names.forEach((name) => {
-          caches.delete(name);
-        });
-      });
-    }
-
-    // Clear localStorage and sessionStorage
-    localStorage.clear();
-    sessionStorage.clear();
-
-    // Force reload with cache busting
-    const timestamp = new Date().getTime();
-    window.location.href = `${window.location.pathname}?_reload=${timestamp}`;
-  };
-
   return (
     <>
       <Head>
@@ -218,15 +198,6 @@ const AdminPortalPageContent = () => {
                   className={`h-4 w-4 ${isForceFetching ? "animate-spin" : ""}`}
                 />
                 {isForceFetching ? "Force Fetching..." : "Nuclear Refresh"}
-              </Button>
-              <Button
-                onClick={forcePageReload}
-                variant="destructive"
-                size="sm"
-                className="flex items-center gap-2 bg-red-600 hover:bg-red-700"
-              >
-                <RotateCcw className="h-4 w-4" />
-                Hard Reload
               </Button>
             </div>
           </div>
