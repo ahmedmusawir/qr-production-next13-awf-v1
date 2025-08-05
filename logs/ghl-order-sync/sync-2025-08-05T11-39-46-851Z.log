@@ -1,0 +1,44 @@
+[2025-08-05 19:39:46] INFO: Broadcasted initial sync status:
+[2025-08-05 19:39:46] INFO: [Valid Order IDs]:
+[2025-08-05 19:39:46] INFO: [Starting sync for Order ID: 6890bcb6dcfdd8ffd3adc4f4]
+[2025-08-05 19:39:47] INFO: Broadcasted sync progress (Orders):
+[2025-08-05 19:39:47] INFO: [Starting sync for Order ID: 688f8525d217bb0c2f70eb71]
+[2025-08-05 19:39:49] INFO: Broadcasted sync progress (Orders):
+[2025-08-05 19:39:49] INFO: [Starting sync for Order ID: 688f847ef415ef147005258d]
+[2025-08-05 19:39:50] INFO: Broadcasted sync progress (Orders):
+[2025-08-05 19:39:50] INFO: [Starting sync for Order ID: 688f83bff415ef09e20506cd]
+[2025-08-05 19:39:50] INFO: Broadcasted sync progress (Orders):
+[2025-08-05 19:39:50] INFO: [Starting sync for Order ID: 688377eb3de9f4167cbfa318]
+[2025-08-05 19:39:51] INFO: Broadcasted sync progress (Orders):
+[2025-08-05 19:39:51] INFO: [Starting sync for Order ID: 6878082ba021e7bb70853f2a]
+[2025-08-05 19:39:52] INFO: Broadcasted sync progress (Orders):
+[2025-08-05 19:39:52] INFO: [Starting sync for Order ID: 6877f44e51aa4549423a6462]
+[2025-08-05 19:39:52] INFO: Broadcasted sync progress (Orders):
+[2025-08-05 19:39:52] INFO: [Starting sync for Order ID: 6877f40e8b72e27a4ba3da5a]
+[2025-08-05 19:39:54] INFO: Broadcasted sync progress (Orders):
+[2025-08-05 19:39:54] INFO: Broadcasted sync ticket progress:
+[2025-08-05 19:39:54] INFO: Broadcasted sync progress:
+[2025-08-05 19:39:54] INFO: Broadcasted sync ticket progress:
+[2025-08-05 19:39:54] INFO: Broadcasted sync progress:
+[2025-08-05 19:39:55] INFO: Broadcasted sync ticket progress:
+[2025-08-05 19:39:55] INFO: Broadcasted sync progress:
+[2025-08-05 19:39:55] INFO: Broadcasted sync ticket progress:
+[2025-08-05 19:39:55] INFO: Broadcasted sync progress:
+[2025-08-05 19:39:55] INFO: Broadcasted sync ticket progress:
+[2025-08-05 19:39:55] INFO: Broadcasted sync progress:
+[2025-08-05 19:39:55] INFO: Broadcasted sync ticket progress:
+[2025-08-05 19:39:56] INFO: Broadcasted sync ticket progress:
+[2025-08-05 19:39:56] INFO: Broadcasted sync progress:
+[2025-08-05 19:39:56] INFO: Broadcasted sync ticket progress:
+[2025-08-05 19:39:56] INFO: Broadcasted sync progress:
+[2025-08-05 19:39:56] INFO: Broadcasted sync ticket progress:
+[2025-08-05 19:39:56] INFO: Broadcasted sync progress:
+[2025-08-05 19:39:56] INFO: Broadcasted ticket verification phase started.
+[2025-08-05 19:39:56] INFO: 
+      =============================================
+      SYNC PROCESS SUCCESSFUL!
+      TOTAL ORDERS SYNCED: 8
+      TOTAL TICKETS ADDED: 0
+      TOTAL TIME TAKEN: 0 min 10 sec
+      =============================================
+    

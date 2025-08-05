@@ -2,8 +2,8 @@
   "syncInProgress": false,
   "totalOrders": 8,
   "syncedOrders": 8,
-  "status": "Complete",
-  "delay_in_sec": 0,
-  "startTime": "2025-08-05T06:07:18.455Z",
-  "endTime": "2025-08-05T06:07:31.779Z"
+  "status": "Delay",
+  "delay_in_sec": 30,
+  "startTime": "2025-08-05T11:39:45.601Z",
+  "endTime": "2025-08-05T11:39:56.932Z"
 }
