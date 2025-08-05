@@ -1,14 +1,6 @@
-// For /app/api/qrapp/fields/route.ts
 import { NextResponse } from "next/server";
 
 export async function GET() {
-  // Set cache control headers to prevent caching
-  const headers = new Headers();
-  headers.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
-  headers.set('Pragma', 'no-cache');
-  headers.set('Expires', '0');
-  headers.set('Surrogate-Control', 'no-store');
-
   try {
     const response = await fetch(
       `https://services.leadconnectorhq.com/locations/${process.env.NEXT_PUBLIC_GHL_LOCATION_ID}/customFields`,
@@ -19,7 +11,6 @@ export async function GET() {
           Accept: "application/json",
         },
         cache: "no-store", // Disables caching
-        next: { revalidate: 0 }, // Force revalidation on every request
       }
     );
 
@@ -30,11 +21,7 @@ export async function GET() {
     const customRawFields = await response.json();
     const customFields = customRawFields.customFields;
 
-    // Return with no-cache headers
-    return new NextResponse(JSON.stringify(customFields), {
-      status: 200,
-      headers: headers,
-    });
+    return NextResponse.json(customFields);
   } catch (error: any) {
     console.error("[/api/qrapp/fields] Error:", error.message);
     return NextResponse.json({ error: error.message }, { status: 500 });

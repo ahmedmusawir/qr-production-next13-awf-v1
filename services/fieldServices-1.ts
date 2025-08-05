@@ -45,18 +45,50 @@ export const upsertProductFieldCombo = async (
   }
 };
 
+// export const upsertProductFieldCombo = async (
+//   product_id: string,
+//   product_name: string,
+//   field_id: string,
+//   field_name: string
+// ) => {
+//   try {
+//     const response = await fetch("/api/qrapp/upsert-field", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       cache: "no-cache",
+//       body: JSON.stringify({
+//         product_id,
+//         product_name,
+//         field_id,
+//         field_name,
+//       }),
+//     });
 
+//     if (!response.ok) {
+//       const errorData = await response.json();
+//       throw new Error(
+//         errorData.error || "Failed to upsert product-field combo"
+//       );
+//     }
+
+//     const data = await response.json();
+//     return {
+//       success: data.success,
+//       message: data.message,
+//     };
+//   } catch (error: any) {
+//     console.error("Error upserting product-field combination:", error.message);
+//     return { success: false, error: error.message };
+//   }
+// };
+
+// Fetch the current active field
 export const getActiveFieldForProduct = async (product_id: string) => {
-  const timestamp = new Date().getTime();
   const response = await fetch(
-    `/api/qrapp/active-fields?product_id=${product_id}&_t=${timestamp}`,
-    { 
-      cache: "no-cache",
-      headers: {
-        'pragma': 'no-cache',
-        'cache-control': 'no-cache, no-store, must-revalidate',
-      }
-    }
+    `/api/qrapp/active-fields?product_id=${product_id}`,
+    { cache: "no-cache" }
   );
   if (!response.ok) {
     console.error("Error fetching active field:", response.statusText);
@@ -72,14 +104,7 @@ export const getActiveFieldForProduct = async (product_id: string) => {
 
 // Fetching all the custom fields from GHL
 export const fetchCustomFields = async () => {
-  const timestamp = new Date().getTime();
-  const response = await fetch(`/api/qrapp/fields?_t=${timestamp}`, { 
-    cache: "no-cache",
-    headers: {
-      'pragma': 'no-cache',
-      'cache-control': 'no-cache, no-store, must-revalidate',
-    }
-  });
+  const response = await fetch("/api/qrapp/fields", { cache: "no-cache" });
   if (!response.ok) {
     throw new Error("Failed to fetch custom fields");
   }
@@ -88,42 +113,4 @@ export const fetchCustomFields = async () => {
     field_id: field.id,
     field_name: field.name,
   }));
-};
-
-// Direct fetch function that bypasses Next.js caching completely
-export const fetchCustomFieldsDirect = async () => {
-  try {
-    // Get the GHL access token from localStorage or another secure source
-    // This is just an example - you'll need to adapt this to your authentication method
-    const token = localStorage.getItem('ghl_access_token') || process.env.NEXT_PUBLIC_GHL_ACCESS_TOKEN;
-    const locationId = process.env.NEXT_PUBLIC_GHL_LOCATION_ID;
-    
-    // Make a direct fetch to the GHL API
-    const response = await fetch(
-      `https://services.leadconnectorhq.com/locations/${locationId}/customFields`,
-      {
-        method: 'GET',
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'Version': '2021-07-28',
-          'Accept': 'application/json',
-          'Cache-Control': 'no-cache, no-store, must-revalidate',
-          'Pragma': 'no-cache',
-        },
-      }
-    );
-    
-    if (!response.ok) {
-      throw new Error(`Failed to fetch custom fields: ${response.statusText}`);
-    }
-    
-    const data = await response.json();
-    return data.customFields.map((field: any) => ({
-      field_id: field.id,
-      field_name: field.name,
-    }));
-  } catch (error: any) {
-    console.error('Error fetching custom fields directly:', error.message);
-    throw error;
-  }
 };
