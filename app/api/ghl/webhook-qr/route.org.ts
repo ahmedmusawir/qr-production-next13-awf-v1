@@ -5,27 +5,23 @@
  * The process involves:
  *
  * 1. Extracting relevant data from the incoming webhook request (order ID, contact ID, product ID).
- * 2. Generating a QR code as a raw PNG file (Buffer).
- * 3. Uploading the PNG file to Supabase Storage and getting a permanent public URL.
- * 4. Updating the GHL contact's custom field with the new Supabase URL.
- * 5. Asynchronously syncing order details to the Supabase database.
+ * 2. Generating a QR code based on the order ID and returning a URL and image for the QR code.
+ * 3. Updating the GHL contact with the generated QR code image.
+ * 4. Asynchronously calling the `/api/ghl/orders/[id]` endpoint to fetch order details and sync them
+ *    with the Supabase database, ensuring the latest order data is available for validation purposes.
  *
- * This new flow ensures the QR code is a reliable image link that works in all email clients.
+ * This ensures that both the QR code generation and the order synchronization happen in one streamlined process.
+ * The order sync is triggered in the background to avoid delaying the response to the webhook.
+ *
+ * Returns a JSON response containing the QR code URL, QR code image, and confirmation of the GHL update.
  */
 
 // Import necessary modules and functions
 import { NextRequest, NextResponse } from "next/server";
 import { extractWebhookData } from "./dataExtraction";
+import { generateQRCode } from "@/utils/qrapp/helpers";
 import { updateGHLField } from "./updateGHLField";
 
-// --- MODIFICATION START ---
-// We are replacing the old QR generator with our two new, tested utility functions.
-import { generateQRCodeBuffer } from "@/utils/qrapp/helpers";
-import { uploadToSupabaseStorage } from "@/utils/supabase/storage";
-// --- MODIFICATION END ---
-
-
-// The GET handler remains unchanged.
 export async function GET(req: NextRequest) {
   return NextResponse.json(
     { message: "GET request successful" },
@@ -33,15 +29,14 @@ export async function GET(req: NextRequest) {
   );
 }
 
-
 // Handle the POST request
 export async function POST(req: NextRequest) {
   try {
-    // Step 1: Parse and extract data (No Change)
+    // Step 1: Parse the incoming request body and extract data
     const webhookData = await req.json();
     const extractedData = extractWebhookData(webhookData);
 
-    // Null check remains the same (No Change)
+    // Check if extractedData is null or missing any required fields
     if (
       !extractedData ||
       !extractedData.contact_id ||
@@ -51,40 +46,24 @@ export async function POST(req: NextRequest) {
       throw new Error("Missing required data from webhook.");
     }
 
+    // Log the extracted data (for testing purposes)
     console.log("Extracted Data:", extractedData);
 
-    // --- MODIFICATION START: This is the core of the new logic ---
-
-    // Step 2: Generate the QR code URL (No Change)
+    // Step 2: Generate the QR code URL and image
     const qrCodeURL = `${process.env.NEXT_PUBLIC_API_BASE_URL}/orders/${extractedData.order_id}`;
+    const qrCodeImage = await generateQRCode(qrCodeURL);
 
-    // Step 3: Generate the QR code as a PNG Buffer instead of a Data URL
-    console.log(`Generating QR Buffer for URL: ${qrCodeURL}`);
-    const qrCodeBuffer = await generateQRCodeBuffer(qrCodeURL);
+    // console.log("Generated QR code URL:", qrCodeURL);
+    // console.log("Generated QR code image:", qrCodeImage);
 
-    // Step 4: Upload the buffer to Supabase Storage
-    const uniqueFileName = `qr-${extractedData.contact_id}-${extractedData.order_id}.png`;
-    const bucketName = 'qr-png-storage'; // The bucket you created
-    
-    console.log(`Uploading ${uniqueFileName} to bucket ${bucketName}...`);
-    const supabaseUrl = await uploadToSupabaseStorage(
-      qrCodeBuffer,
-      uniqueFileName,
-      bucketName
-    );
-
-    // Step 5: Update the GHL contact with the NEW Supabase URL
-    console.log(`Updating GHL contact ${extractedData.contact_id} with Supabase URL.`);
+    // Step 3: Update the GHL contact with the generated QR code
     const updateResult = await updateGHLField(
       extractedData.contact_id,
       extractedData.product_id,
-      supabaseUrl // We now pass the clean URL instead of the old image data
+      qrCodeImage
     );
 
-    // --- MODIFICATION END ---
-
-    // Step 6: Asynchronously sync the order data (No Change)
-    // This logic is preserved exactly as it was.
+    // Step 4: Asynchronously sync the order data by calling the `/api/ghl/orders/[id]` endpoint
     fetch(
       `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/ghl/orders/${extractedData.order_id}`,
       {
@@ -105,18 +84,19 @@ export async function POST(req: NextRequest) {
         );
       });
 
-    // Step 7: Return a success response with the new Supabase URL (Modified Response)
+    // Step 5: Return a success response if everything goes well
     return NextResponse.json(
       {
         message:
-          "QR code generated, uploaded to Supabase, GHL contact updated, and order sync triggered.",
-        supabaseUrl: supabaseUrl, // We return the new URL
+          "QR code generated, GHL contact updated, and order sync triggered successfully.",
+        qrCodeURL,
+        qrCodeImage,
         updateResult,
       },
       { status: 200 }
     );
   } catch (error: any) {
-    // Error handling remains the same (No Change)
+    // Handle any errors and respond with an error message
     console.error(
       "Error processing webhook data & updating GHL contact:",
       error.message

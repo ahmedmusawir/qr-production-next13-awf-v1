@@ -15,6 +15,33 @@ export const generateQRCode = async (text: string): Promise<string> => {
   }
 };
 
+
+/**
+ * Generates a QR code for the given data and returns it as a PNG Buffer.
+ * This is the core function for creating an image that can be saved or uploaded.
+ * It is intended for server-side use.
+ * @param data The string data to encode in the QR code (e.g., a URL).
+ * @returns A Promise that resolves with the PNG image as a Buffer.
+ */
+export async function generateQRCodeBuffer(data: string): Promise<Buffer> {
+  try {
+    // Generate the QR code as a raw PNG buffer
+    const qrCodeBuffer = await QRCode.toBuffer(data, {
+      type: 'png', 
+      width: 300,
+      errorCorrectionLevel: 'H', // High error correction for reliability
+      margin: 2,
+    });
+    return qrCodeBuffer;
+  } catch (err) {
+    console.error('Error generating QR Code Buffer:', err);
+    // Re-throw the error to be handled by the calling function
+    throw new Error('QR Code generation failed.');
+  }
+}
+
+
+
 /**
  * Utility: /utils/ticketTypeGenerator.ts
  *
