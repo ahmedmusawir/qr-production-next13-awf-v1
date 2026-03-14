@@ -1,0 +1,11 @@
+node_modules
+.next
+.env*
+logs
+*.log
+.git
+.gitignore
+README.md
+CLAUDE.md
+RECOVERY.md
+session_*.md

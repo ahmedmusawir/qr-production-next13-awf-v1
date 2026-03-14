@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": {
+          "tool": "Bash"
+        },
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/block-off-mission.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
