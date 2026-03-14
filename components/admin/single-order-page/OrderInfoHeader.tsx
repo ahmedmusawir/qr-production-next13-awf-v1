@@ -9,12 +9,6 @@ const OrderInfoHeader = ({ order }: OrderProps) => {
   return (
     <>
       <div className="px-4 sm:px-0 pb-5 sm:pb-12">
-        <img
-          src={order.event_image}
-          alt="Event"
-          className="h-32 w-32 rounded-full sm:float-start mr-10 mb-8"
-          //   className="h-16 w-16 rounded-md float-start mr-10"
-        />
         <h2 className="text-3xl sm:text-4xl font-semibold leading-7 text-gray-900">
           Order Information:{" "}
         </h2>

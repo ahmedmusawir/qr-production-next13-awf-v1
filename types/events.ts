@@ -1,6 +1,6 @@
 export interface EventsResponse {
   events: GHLEvent[];
-  pagination: Pagination;
+  total: number;
 }
 
 export interface GHLEvent {

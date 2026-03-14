@@ -1,25 +1,12 @@
-export const fetchEvents = async (page: number = 1, pageSize: number = 10) => {
+export const fetchEvents = async () => {
   try {
-    // Construct the query parameters
-    const queryParams = new URLSearchParams({
-      page: page.toString(),
-      pageSize: pageSize.toString(),
-    });
+    const response = await fetch("/api/qrapp/events", { cache: "no-store" });
 
-    // Make the GET request to the /events endpoint
-    const response = await fetch(
-      `/api/qrapp/events?${queryParams.toString()}`,
-      { cache: "no-store" }
-    );
-
-    // Handle the response
     if (!response.ok) {
       throw new Error("Failed to fetch events");
     }
 
-    // Parse the response data
-    const data = await response.json();
-    return data; // Return the data for further use
+    return await response.json(); // { events: GHLEvent[], total: number }
   } catch (error) {
     console.error("Error fetching events:", error);
     throw error;

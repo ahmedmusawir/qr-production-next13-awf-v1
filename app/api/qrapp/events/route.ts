@@ -1,22 +1,16 @@
 import { NextResponse } from "next/server";
 
-export async function GET(request: Request) {
-  const { searchParams } = new URL(request.url);
-  const page = parseInt(searchParams.get("page") || "1", 10); // Default to page 1
-  const pageSize = parseInt(searchParams.get("pageSize") || "10", 10); // Default to 10 items per page
-
-  const offset = (page - 1) * pageSize;
-
+export async function GET() {
   try {
     const response = await fetch(
-      `https://services.leadconnectorhq.com/products/?locationId=${process.env.NEXT_PUBLIC_GHL_LOCATION_ID}`,
+      `https://services.leadconnectorhq.com/products/?locationId=${process.env.NEXT_PUBLIC_GHL_LOCATION_ID}&limit=100`,
       {
         headers: {
           Authorization: `Bearer ${process.env.GHL_ACCESS_TOKEN}`,
           Version: "2021-07-28",
           Accept: "application/json",
         },
-        cache: "no-store", // Disables caching
+        cache: "no-store",
       }
     );
 
@@ -24,28 +18,21 @@ export async function GET(request: Request) {
       throw new Error(`Failed to fetch events: ${response.statusText}`);
     }
 
-    const eventsRawData = await response.json();
-    const eventsData = await eventsRawData.products;
+    const raw = await response.json();
+    const events = raw.products ?? [];
+    const total: number = raw.total ?? events.length;
 
-    // console.log("Received events data:", eventsData);
+    // TODO: current implementation fetches first 100 products only.
+    // If total > 100, a pagination loop is needed to fetch remaining pages.
+    if (total > 100) {
+      console.warn(
+        `[/api/qrapp/events] GHL reports ${total} total products but only the first 100 were fetched. Future enhancement: implement offset loop.`
+      );
+    }
 
-    // Since eventsData is already an array, no need for extra processing
-    const totalItems = eventsData.length;
-    const paginatedEvents = eventsData.slice(offset, offset + pageSize);
-
-    const totalPages = Math.ceil(totalItems / pageSize);
-
-    return NextResponse.json({
-      events: paginatedEvents,
-      pagination: {
-        totalItems,
-        totalPages,
-        currentPage: page,
-        pageSize,
-      },
-    });
+    return NextResponse.json({ events, total });
   } catch (error: any) {
-    console.error("[/api/events] Error:", error.message);
+    console.error("[/api/qrapp/events] Error:", error.message);
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }
