@@ -58,9 +58,9 @@ const AdminPortalPageContent = () => {
       </Head>
       <Page className={""} FULL={false}>
         <Row className="prose max-w-3xl mx-auto">
-          <section className="sync-btn-section">
+          {/* <section className="sync-btn-section">
             <SyncButtonBlock />
-          </section>
+          </section> */}
           <div className="flex justify-between items-center">
             <h1 className="">Admin Portal</h1>
           </div>

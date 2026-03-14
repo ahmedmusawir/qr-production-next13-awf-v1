@@ -1,22 +1,674 @@
 [
   {
-    "product_id": "688a7dd5862c0c5b95929149",
+    "product_id": "68e41ccb32986b6ee66f0603",
     "ticket_types": [
       {
-        "name": "10/06 AWF Gulf Coast Wild Game Cook-Off Ticket"
+        "name": "Early Explorers Program Ticket - INDIVIDUAL MONTH"
       }
     ]
   },
   {
-    "product_id": "686fead35e4ad60bb53dc191",
+    "product_id": "68e417f832986b76d16e7dca",
     "ticket_types": [
       {
-        "name": "05/03 AWF Lake Martin Wild Game Cook-Off Ticket"
+        "name": "AWF Madison County Wild Game Cook-Off Ticket - $50"
       }
     ]
   },
   {
-    "product_id": "68877a7e862c0c11229086d6",
+    "product_id": "68e41b6622640a043d9452aa",
+    "ticket_types": [
+      {
+        "name": "AWF Cullman Wild Game Cook-Off Ticket - $50"
+      }
+    ]
+  },
+  {
+    "product_id": "68e41ae1a28cc0cf237fe9f6",
+    "ticket_types": [
+      {
+        "name": "AWF State Finals Wild Game Cook-Off Ticket - $50"
+      }
+    ]
+  },
+  {
+    "product_id": "68e41aa865e9005fc4e31517",
+    "ticket_types": [
+      {
+        "name": "AWF Tri-County Wild Game Cook-Off - $50"
+      }
+    ]
+  },
+  {
+    "product_id": "68e41a6322640a19ea943750",
+    "ticket_types": [
+      {
+        "name": "AWF Limestone County Wild Game Cook-Off Ticket - $50"
+      }
+    ]
+  },
+  {
+    "product_id": "68e41a1b32986bca796eb95c",
+    "ticket_types": [
+      {
+        "name": "AWF Demopolis Wild Game Cook-Off Ticket - $50"
+      }
+    ]
+  },
+  {
+    "product_id": "68e419dd7a388b4064795fdb",
+    "ticket_types": [
+      {
+        "name": "AWF Quad Cities Wild Game Cook-Off Ticket - $50"
+      }
+    ]
+  },
+  {
+    "product_id": "68e4199a1fe808032354fa73",
+    "ticket_types": [
+      {
+        "name": "AWF Wiregrass Wild Game Cook-Off Ticket - $50"
+      }
+    ]
+  },
+  {
+    "product_id": "68e4195465e900d348e2eb52",
+    "ticket_types": [
+      {
+        "name": "Birmingham Wild Game Cook-Off Ticket - $50"
+      }
+    ]
+  },
+  {
+    "product_id": "68e41914a28cc0f2f57fae99",
+    "ticket_types": [
+      {
+        "name": "AWF Morgan County Wild Game Cook-Off Ticket - $50"
+      }
+    ]
+  },
+  {
+    "product_id": "68e418d2009b307e598008c9",
+    "ticket_types": [
+      {
+        "name": "AWF Tuscaloosa Wild Game Cook-Off Ticket - $50"
+      }
+    ]
+  },
+  {
+    "product_id": "68e41895be54d20c21373a5d",
+    "ticket_types": [
+      {
+        "name": "AWF Selma Wild Game Cook-Off Ticket - $50"
+      }
+    ]
+  },
+  {
+    "product_id": "68e41841be54d2af8c3731ec",
+    "ticket_types": [
+      {
+        "name": "AWF Southwest Alabama Wild Game Cook-Off Ticket - $50"
+      }
+    ]
+  },
+  {
+    "product_id": "68e41386ddb9f003643e0a17",
+    "ticket_types": [
+      {
+        "name": "AWF Gulf Coast Wild Game Cook-Off Ticket - $50"
+      }
+    ]
+  },
+  {
+    "product_id": "68e41e6609214faf2280b726",
+    "ticket_types": [
+      {
+        "name": "AWF Lake Martin Wild Game Cook-Off Ticket - $50"
+      }
+    ]
+  },
+  {
+    "product_id": "68e41b2f0b71dc30ea16ccb4",
+    "ticket_types": [
+      {
+        "name": "AWF Talladega Wild Game Cook-Off Ticket - $50"
+      }
+    ]
+  },
+  {
+    "product_id": "68e42f09bff2497accfcb0d2",
+    "ticket_types": [
+      {
+        "name": "ANC Feather Festival Pzazz @ 20"
+      }
+    ]
+  },
+  {
+    "product_id": "690367590e17403c635d0b47",
+    "ticket_types": [
+      {
+        "name": "Christmas At The ANC - Members Only @ 5"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91ee30064dbf91d02c399",
+    "ticket_types": [
+      {
+        "name": "Birmingham Cook-Off Sponsorship - $250 @ 250"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91ecd472003efdd2fb992",
+    "ticket_types": [
+      {
+        "name": "Birmingham Cook-Off Sponsorship - $500 @ 500"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91ebd8c34bf0881f2c5f7",
+    "ticket_types": [
+      {
+        "name": "Birmingham Cook-Off Sponsorship - $1,000 @ 1000"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91eaf0208d334c73d7b40",
+    "ticket_types": [
+      {
+        "name": "Birmingham Cook-Off Sponsorship - $1,500 @ 1500"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91e9f27cfd77ee35f0aa8",
+    "ticket_types": [
+      {
+        "name": "Birmingham Cook-Off Sponsorship - $3,000 @ 3000"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91e8c6aa2277411a3c7ca",
+    "ticket_types": [
+      {
+        "name": "Birmingham Cook-Off Sponsorship - $4,500 @ 4500"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91e7b71a0e80db9d43376",
+    "ticket_types": [
+      {
+        "name": "Birmingham Cook-Off Sponsorship - $6,000 @ 6000"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91e6c27cfd733b35f073a",
+    "ticket_types": [
+      {
+        "name": "Birmingham Cook-Off Sponsorship - $7,500 @ 7500"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91e3871a0e8aeb8d42f24",
+    "ticket_types": [
+      {
+        "name": "Tri-County Cook-Off Sponsorship - $250 @ 250"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91e29417f838bcfb17553",
+    "ticket_types": [
+      {
+        "name": "Tri-County Cook-Off Sponsorship - $500 @ 500"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91e128201a130adfcb738",
+    "ticket_types": [
+      {
+        "name": "Tri-County Cook-Off Sponsorship - $1,000 @ 1000"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91e00472003cb272faccd",
+    "ticket_types": [
+      {
+        "name": "Tri-County Cook-Off Sponsorship - $1,500 @ 1500"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91dee47200378142fac21",
+    "ticket_types": [
+      {
+        "name": "Tri-County Cook-Off Sponsorship - $3,000 @ 3000"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91ddfea340778e4805988",
+    "ticket_types": [
+      {
+        "name": "Tri-County Cook-Off Sponsorship - $4,500 @ 4500"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91dcd4af4f21928b04a3b",
+    "ticket_types": [
+      {
+        "name": "Tri-County Cook-Off Sponsorship - $6,000 @ 6000"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91d850208d333c53d69e7",
+    "ticket_types": [
+      {
+        "name": "Cook-Off Sponsorship - Bobwhite Quail @ 250"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91d72472003746a2fa2aa",
+    "ticket_types": [
+      {
+        "name": "Cook-Off Sponsorship - Wild Turkey @ 500"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91d56bdb968cc94c3f59c",
+    "ticket_types": [
+      {
+        "name": "Cook-Off Sponsorship - Blue Marlin @ 1000"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91d450208d3511f3d6155",
+    "ticket_types": [
+      {
+        "name": "Cook-Off Sponsorship - 12-Point Buck @ 2500"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91d30472003cf562f9b24",
+    "ticket_types": [
+      {
+        "name": "Cook-Off Sponsorship - Big Bear @ 5000"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91d165bfac6522ef44d29",
+    "ticket_types": [
+      {
+        "name": "Cook-Off Sponsorship - American Alligator @ 7500"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91d010208d328f03d5db8",
+    "ticket_types": [
+      {
+        "name": "Cook-Off Sponsorship - Bald Eagle @ 10000"
+      }
+    ]
+  },
+  {
+    "product_id": "68f91a1a6aa2272ed4a35f59",
+    "ticket_types": [
+      {
+        "name": "Corporate Membership - Corporate Roll of Honor @ 250000"
+      }
+    ]
+  },
+  {
+    "product_id": "68f919d95bfac686b8f40462",
+    "ticket_types": [
+      {
+        "name": "Corporate Membership - President's Circle @ 100000"
+      }
+    ]
+  },
+  {
+    "product_id": "68f919c41612ccb8a5952252",
+    "ticket_types": [
+      {
+        "name": "Corporate Membership - Director's Circle @ 50000"
+      }
+    ]
+  },
+  {
+    "product_id": "68f919b227cfd793315e9dea",
+    "ticket_types": [
+      {
+        "name": "Corporate Membership - Executive Circle @ 25000"
+      }
+    ]
+  },
+  {
+    "product_id": "68f919a05c96a5df5065dfb9",
+    "ticket_types": [
+      {
+        "name": "Corporate Membership - Sponsor @ 10000"
+      }
+    ]
+  },
+  {
+    "product_id": "68f9198e6aa2276c8aa34c3b",
+    "ticket_types": [
+      {
+        "name": "Corporate Membership - Sustainer @ 5000"
+      }
+    ]
+  },
+  {
+    "product_id": "68f9197b1612cc6d80951a45",
+    "ticket_types": [
+      {
+        "name": "Corporate Membership - Supporter @ 2500"
+      }
+    ]
+  },
+  {
+    "product_id": "68f9195f8c34bf7796f25368",
+    "ticket_types": [
+      {
+        "name": "Corporate Membership - Patron @ 1000"
+      }
+    ]
+  },
+  {
+    "product_id": "68ed5a5d7f6096decf95fc77",
+    "ticket_types": [
+      {
+        "name": "Christmas at The ANC @ 12"
+      }
+    ]
+  },
+  {
+    "product_id": "68e50c49b1ee3f53d95d3d80",
+    "ticket_types": [
+      {
+        "name": "Family Membership Only"
+      },
+      {
+        "name": "Family Membership + 1 Guest"
+      },
+      {
+        "name": "Family Membership + 2 Guests"
+      },
+      {
+        "name": "Family Membership + 3 Guests"
+      },
+      {
+        "name": "Family Membership + 4 Guests"
+      },
+      {
+        "name": "Family Membership + 5 Guests"
+      },
+      {
+        "name": "Family Membership + 6 Guests"
+      },
+      {
+        "name": "Family Membership + 7 Guests"
+      },
+      {
+        "name": "Family Membership + 8 Guests"
+      },
+      {
+        "name": "Family Membership + 9 Guests"
+      },
+      {
+        "name": "Family Membership + 10 Guests"
+      }
+    ]
+  },
+  {
+    "product_id": "68e50bb143b03e7da2370b61",
+    "ticket_types": [
+      {
+        "name": "Double Club Membership Only"
+      },
+      {
+        "name": "Double Club Membership + 1 Guest"
+      },
+      {
+        "name": "Double Club Membership + 2 Guests"
+      },
+      {
+        "name": "Double Club Membership + 3 Guests"
+      },
+      {
+        "name": "Double Club Membership + 4 Guests"
+      },
+      {
+        "name": "Double Club Membership + 5 Guests"
+      },
+      {
+        "name": "Double Club Membership + 6 Guests"
+      },
+      {
+        "name": "Double Club Membership + 7 Guests"
+      },
+      {
+        "name": "Double Club Membership + 8 Guests"
+      },
+      {
+        "name": "Double Club Membership + 9 Guests"
+      },
+      {
+        "name": "Double Club Membership + 10 Guests"
+      }
+    ]
+  },
+  {
+    "product_id": "68e50b0a921e676cc895a8fe",
+    "ticket_types": [
+      {
+        "name": "Just You"
+      },
+      {
+        "name": "You + 1 Guest"
+      },
+      {
+        "name": "You + 2 Guests"
+      },
+      {
+        "name": "You + 3 Guests"
+      },
+      {
+        "name": "You + 4 Guests"
+      },
+      {
+        "name": "You + 5 Guests"
+      },
+      {
+        "name": "You + 6 Guests"
+      },
+      {
+        "name": "You + 7 Guests"
+      },
+      {
+        "name": "You + 8 Guests"
+      },
+      {
+        "name": "You + 9 Guests"
+      },
+      {
+        "name": "You + 10 Guests"
+      }
+    ]
+  },
+  {
+    "product_id": "68e5096795c6882657ed816d",
+    "ticket_types": [
+      {
+        "name": "Family Pass Only"
+      },
+      {
+        "name": "Family Pass + 1 Guest"
+      },
+      {
+        "name": "Family Pass + 2 Guests"
+      },
+      {
+        "name": "Family Pass + 3 Guests"
+      },
+      {
+        "name": "Family Pass + 4 Guests"
+      },
+      {
+        "name": "Family Pass + 5 Guests"
+      },
+      {
+        "name": "Family Pass + 6 Guests"
+      },
+      {
+        "name": "Family Pass + 7 Guests"
+      },
+      {
+        "name": "Family Pass + 8 Guests"
+      },
+      {
+        "name": "Family Pass + 9 Guests"
+      },
+      {
+        "name": "Family Pass + 10 Guests"
+      }
+    ]
+  },
+  {
+    "product_id": "68e435427bae0c74e9018d60",
+    "ticket_types": [
+      {
+        "name": "Double Pass Only"
+      },
+      {
+        "name": "Double Pass + 1 Guest"
+      },
+      {
+        "name": "Double Pass + 2 Guests"
+      },
+      {
+        "name": "Double Pass + 3 Guests"
+      },
+      {
+        "name": "Double Pass + 4 Guests"
+      },
+      {
+        "name": "Double Pass + 5 Guests"
+      },
+      {
+        "name": "Double Pass + 6 Guests"
+      },
+      {
+        "name": "Double Pass + 7 Guests"
+      },
+      {
+        "name": "Double Pass + 8 Guests"
+      },
+      {
+        "name": "Double Pass + 9 Guests"
+      },
+      {
+        "name": "Double Pass + 10 Guests"
+      }
+    ]
+  },
+  {
+    "product_id": "68e4331309214f3db68374ee",
+    "ticket_types": [
+      {
+        "name": "Just You"
+      },
+      {
+        "name": "You + 1 Guest"
+      },
+      {
+        "name": "You + 2 Guests"
+      },
+      {
+        "name": "You + 3 Guests"
+      },
+      {
+        "name": "You + 4 Guests"
+      },
+      {
+        "name": "You + 5 Guests"
+      },
+      {
+        "name": "You + 6 Guests"
+      },
+      {
+        "name": "You + 7 Guests"
+      },
+      {
+        "name": "You + 8 Guests"
+      },
+      {
+        "name": "You + 9 Guests"
+      },
+      {
+        "name": "You + 10 Guests"
+      }
+    ]
+  },
+  {
+    "product_id": "68e41d0d7bae0cb94cfe5304",
+    "ticket_types": [
+      {
+        "name": "Art & Nature Day Ticket @ 20"
+      }
+    ]
+  },
+  {
+    "product_id": "68e41c8291e7e9598bdaeb9d",
+    "ticket_types": [
+      {
+        "name": "Early Explorers Program Ticket Package - SUMMER TICKETS @ 30"
+      }
+    ]
+  },
+  {
+    "product_id": "68e41c401a97e9827f52ee5e",
+    "ticket_types": [
+      {
+        "name": "Early Explorers Program Ticket Package - SPRING TICKETS @ 30"
+      }
+    ]
+  },
+  {
+    "product_id": "68e41bf5ff46255c7d887380",
+    "ticket_types": [
+      {
+        "name": "Early Explorers Program Ticket Package - WINTER TICKETS @ 35"
+      }
+    ]
+  },
+  {
+    "product_id": "68e417a61fe8083e5954bd36",
+    "ticket_types": [
+      {
+        "name": "Big Backyard Campout Ticket @ 5"
+      }
+    ]
+  },
+  {
+    "product_id": "68e417261a97e939df525dff",
     "ticket_types": [
       {
         "name": "1 Ticket"
@@ -36,722 +688,18 @@
     ]
   },
   {
-    "product_id": "6883e407360ca1092296bfe3",
+    "product_id": "68e4130622640a6ed2933ca4",
     "ticket_types": [
       {
-        "name": "Bald Eagle"
-      },
-      {
-        "name": "American Alligator"
-      },
-      {
-        "name": "Big Bear"
-      },
-      {
-        "name": "12-Point Buck"
-      },
-      {
-        "name": "Blue Marlin"
-      },
-      {
-        "name": "Wild Turkey"
-      },
-      {
-        "name": "Bobwhite Quail"
+        "name": "Water Wonders Day @ 16"
       }
     ]
   },
   {
-    "product_id": "6878062900aa2c1beb273fb6",
+    "product_id": "68e415ae1bffe24aab69e304",
     "ticket_types": [
       {
-        "name": "You + 9 Guests"
-      },
-      {
-        "name": "You + 3Guests"
-      },
-      {
-        "name": "You + 4 Guests"
-      },
-      {
-        "name": "You + 2 Guests"
-      },
-      {
-        "name": "You + 8 Guests"
-      },
-      {
-        "name": "You + 6 Guests"
-      },
-      {
-        "name": "You + 1 Guest"
-      },
-      {
-        "name": "You + 5 Guests"
-      },
-      {
-        "name": "Just You"
-      },
-      {
-        "name": "You + 7 Guests"
-      },
-      {
-        "name": "You + 10 Guests"
-      }
-    ]
-  },
-  {
-    "product_id": "687806b1360ca1867d921297",
-    "ticket_types": [
-      {
-        "name": "You + 4 Guests"
-      },
-      {
-        "name": "You + 6 Guests"
-      },
-      {
-        "name": "You + 3Guests"
-      },
-      {
-        "name": "You + 2 Guests"
-      },
-      {
-        "name": "You + 5 Guests"
-      },
-      {
-        "name": "You + 7 Guests"
-      },
-      {
-        "name": "You + 1 Guest"
-      },
-      {
-        "name": "You + 9 Guests"
-      },
-      {
-        "name": "Double Club Membership Only"
-      },
-      {
-        "name": "You + 8 Guests"
-      },
-      {
-        "name": "You + 10 Guests"
-      }
-    ]
-  },
-  {
-    "product_id": "6878072500aa2c2f2f27403a",
-    "ticket_types": [
-      {
-        "name": "You + 7 Guests"
-      },
-      {
-        "name": "You + 10 Guests"
-      },
-      {
-        "name": "You + 6 Guests"
-      },
-      {
-        "name": "You + 3Guests"
-      },
-      {
-        "name": "You + 8 Guests"
-      },
-      {
-        "name": "You + 4 Guests"
-      },
-      {
-        "name": "You + 1 Guest"
-      },
-      {
-        "name": "You + 2 Guests"
-      },
-      {
-        "name": "Family Membership Only"
-      },
-      {
-        "name": "You + 9 Guests"
-      },
-      {
-        "name": "You + 5 Guests"
-      }
-    ]
-  },
-  {
-    "product_id": "6877ffbd00aa2c3be2273c46",
-    "ticket_types": [
-      {
-        "name": "You + 1 Guest"
-      },
-      {
-        "name": "Family Pass Only"
-      },
-      {
-        "name": "You + 5 Guests"
-      },
-      {
-        "name": "You + 4 Guests"
-      },
-      {
-        "name": "You + 3Guests"
-      },
-      {
-        "name": "You + 9 Guests"
-      },
-      {
-        "name": "You + 2 Guests"
-      },
-      {
-        "name": "You + 10 Guests"
-      },
-      {
-        "name": "You + 7 Guests"
-      },
-      {
-        "name": "You + 6 Guests"
-      },
-      {
-        "name": "You + 8 Guests"
-      }
-    ]
-  },
-  {
-    "product_id": "687a78543dd89d0f6b91e565",
-    "ticket_types": [
-      {
-        "name": "Big Backyard Campout Ticket @ 5"
-      }
-    ]
-  },
-  {
-    "product_id": "687bdfc27b3422401cd9c4ad",
-    "ticket_types": [
-      {
-        "name": "5/22/25 - AWF Madison County Wild Game Cook-Off Ticket"
-      }
-    ]
-  },
-  {
-    "product_id": "687bd40a360ca127e7933df0",
-    "ticket_types": [
-      {
-        "name": "11/06/25 - AWF Southwest Alabama Wild Game Cook-Off Ticket"
-      }
-    ]
-  },
-  {
-    "product_id": "687bd38e360ca1e3b3933dd8",
-    "ticket_types": [
-      {
-        "name": "10/30/25 - AWF Selma Wild Game Cook-Off Ticket"
-      }
-    ]
-  },
-  {
-    "product_id": "687bd313862c0c112c8bb3c2",
-    "ticket_types": [
-      {
-        "name": "10/23/25 - AWF Tuscaloosa Wild Game Cook-Off Ticket"
-      }
-    ]
-  },
-  {
-    "product_id": "687bd2617b3422b36bd9c074",
-    "ticket_types": [
-      {
-        "name": "09/25/25 - AWF Morgan County Wild Game Cook-Off Ticket"
-      }
-    ]
-  },
-  {
-    "product_id": "687bd140360ca15835933d26",
-    "ticket_types": [
-      {
-        "name": "09/18/25 - Birmingham Wild Game Cook-Off Ticket"
-      }
-    ]
-  },
-  {
-    "product_id": "687bcf7407a263211e2612e8",
-    "ticket_types": [
-      {
-        "name": "03/06/25 - AWF Wiregrass Wild Game Cook-Off Ticket"
-      }
-    ]
-  },
-  {
-    "product_id": "687bd049360ca1c393933cd6",
-    "ticket_types": [
-      {
-        "name": "09/04/25 - AWF Quad Cities Wild Game Cook-Off Ticket"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead232c2cd34142d2b23",
-    "ticket_types": [
-      {
-        "name": "2/20/25 - Demopolis Wild Game Cook-Off Ticket"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead213b9608029124385",
-    "ticket_types": [
-      {
-        "name": "5/06 AWF Limestone County Wild Game Cook-Off Ticket"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead32165d4e81bf654fb",
-    "ticket_types": [
-      {
-        "name": "4/17 AWF Tri-County Wild Game Cook-Off"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead25e4ad6292c3dc187",
-    "ticket_types": [
-      {
-        "name": "8/2 AWF State Finals Wild Game Cook-Off Ticket"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead3d504cb3ca4227c86",
-    "ticket_types": [
-      {
-        "name": "3/29 (NEW DATE)) AWF Talladega Wild Game Cook-Off Ticket"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead313b960a3a512438a",
-    "ticket_types": [
-      {
-        "name": "4/03 AWF Cullman Wild Game Cook-Off Ticket"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead432c2cddaa72d2b2e",
-    "ticket_types": [
-      {
-        "name": "Early Explorers Program Ticket Package - WINTER TICKETS"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead45e4ad6859f3dc19c",
-    "ticket_types": [
-      {
-        "name": "Early Explorers Program Ticket Package - SPRING TICKETS"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead432c2cd7f122d2b34",
-    "ticket_types": [
-      {
-        "name": "Early Explorers Program Ticket Package - SUMMER TICKETS"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead55e4ad6aec03dc1a0",
-    "ticket_types": [
-      {
-        "name": "Early Explorers Program Ticket - INDIVIDUAL MONTH"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead532c2cd91442d2b3b",
-    "ticket_types": [
-      {
-        "name": "Art & Nature Day Ticket @ 20"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead646f640178c47c22a",
-    "ticket_types": [
-      {
-        "name": "Alabama Nature Center Trail Access Ticket @ 5"
-      }
-    ]
-  },
-  {
-    "product_id": "6877feeb5dbfedbbfe116064",
-    "ticket_types": [
-      {
-        "name": "You + 6 Guests"
-      },
-      {
-        "name": "You + 5 Guests"
-      },
-      {
-        "name": "You + 10 Guests"
-      },
-      {
-        "name": "You + 2 Guests"
-      },
-      {
-        "name": "You + 8 Guests"
-      },
-      {
-        "name": "You + 1 Guest"
-      },
-      {
-        "name": "You + 4 Guests"
-      },
-      {
-        "name": "You + 9 Guests"
-      },
-      {
-        "name": "Double Pass Only"
-      },
-      {
-        "name": "You + 3Guests"
-      },
-      {
-        "name": "You + 7 Guests"
-      }
-    ]
-  },
-  {
-    "product_id": "6877fc1907a263d80a24c873",
-    "ticket_types": [
-      {
-        "name": "You + 6 Guests"
-      },
-      {
-        "name": "You + 2 Guests"
-      },
-      {
-        "name": "You + 3Guests"
-      },
-      {
-        "name": "Just You"
-      },
-      {
-        "name": "You + 1 Guest"
-      },
-      {
-        "name": "You + 4 Guests"
-      },
-      {
-        "name": "You + 8 Guests"
-      },
-      {
-        "name": "You + 9 Guests"
-      },
-      {
-        "name": "You + 5 Guests"
-      },
-      {
-        "name": "You + 7 Guests"
-      },
-      {
-        "name": "You + 10 Guests"
-      }
-    ]
-  },
-  {
-    "product_id": "6877eda1360ca10660920034",
-    "ticket_types": [
-      {
-        "name": "Corporate Patron: $1,000"
-      },
-      {
-        "name": "President's Circle: $100,000"
-      },
-      {
-        "name": "Executive Circle: $25,000"
-      },
-      {
-        "name": "Corporate Sustainer: $5,000"
-      },
-      {
-        "name": "Corporate Sponsor: $10,000"
-      },
-      {
-        "name": "Director's Circle: $50,000"
-      },
-      {
-        "name": "Corporate Supporter: $2,500"
-      },
-      {
-        "name": "Corporate Roll of Honor: $250,000"
-      }
-    ]
-  },
-  {
-    "product_id": "6877db6c5dbfed45cb1148c0",
-    "ticket_types": [
-      {
-        "name": "You + 2 Guest"
-      },
-      {
-        "name": "You + 1 Guest"
-      },
-      {
-        "name": "Only You"
-      },
-      {
-        "name": "You + 3 Guest"
-      }
-    ]
-  },
-  {
-    "product_id": "6877da5102deb20e951dd6dc",
-    "ticket_types": [
-      {
-        "name": "2"
-      },
-      {
-        "name": "1"
-      },
-      {
-        "name": "3"
-      }
-    ]
-  },
-  {
-    "product_id": "6877d8f607a263af9524b23e",
-    "ticket_types": [
-      {
-        "name": "Demo var 11"
-      }
-    ]
-  },
-  {
-    "product_id": "6877d8b4360ca1009f91f574",
-    "ticket_types": [
-      {
-        "name": "2 guest"
-      },
-      {
-        "name": "Demo Var 1 @ 10"
-      },
-      {
-        "name": "1 guest"
-      }
-    ]
-  },
-  {
-    "product_id": "686feadc5e4ad6c0fc3dc1ce",
-    "ticket_types": [
-      {
-        "name": "Black Bear Sign @ 2.5"
-      }
-    ]
-  },
-  {
-    "product_id": "686feadc13b96085d91243c9",
-    "ticket_types": [
-      {
-        "name": "AWF Silicone Smartphone Wallet @ 5"
-      }
-    ]
-  },
-  {
-    "product_id": "686feadcd504cb209e227cc2",
-    "ticket_types": [
-      {
-        "name": "Member License Plate @ 5"
-      }
-    ]
-  },
-  {
-    "product_id": "686feadb32c2cdb5de2d2b74",
-    "ticket_types": [
-      {
-        "name": "No Trespassing Sign @ 5"
-      }
-    ]
-  },
-  {
-    "product_id": "686feadb13b960f2e01243c3",
-    "ticket_types": [
-      {
-        "name": "Sack Ups Shotgun Sack @ 10"
-      }
-    ]
-  },
-  {
-    "product_id": "686feadb46f640399c47c24e",
-    "ticket_types": [
-      {
-        "name": "Window Decal- White @ 3"
-      }
-    ]
-  },
-  {
-    "product_id": "686feadad504cbb150227cba",
-    "ticket_types": [
-      {
-        "name": "Window Decal - Pink @ 3"
-      }
-    ]
-  },
-  {
-    "product_id": "686feada2165d43e4af65539",
-    "ticket_types": [
-      {
-        "name": "*Cap: Richardson Embroidered AWF Logo @ 25"
-      }
-    ]
-  },
-  {
-    "product_id": "686feada2165d47d5af65535",
-    "ticket_types": [
-      {
-        "name": "AWF ComfortWash by Hanes LS Shirt with Pocket @ 25"
-      }
-    ]
-  },
-  {
-    "product_id": "686feada46f640d9c047c249",
-    "ticket_types": [
-      {
-        "name": "AWF ComfortWash by Hanes SS Shirt Frontier Blue @ 20"
-      }
-    ]
-  },
-  {
-    "product_id": "686feadad504cb436b227cb0",
-    "ticket_types": [
-      {
-        "name": "Cap: 90th Anniversary - Camo @ 25"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead932c2cde6bd2d2b64",
-    "ticket_types": [
-      {
-        "name": "Cap: 90th Anniversary - Khaki @ 25"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead92165d4a20df6552f",
-    "ticket_types": [
-      {
-        "name": "Shirt: 90th Anniversary - Khaki @ 25"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead913b960cce31243b3",
-    "ticket_types": [
-      {
-        "name": "Shirt: 90th Anniversary - Moss @ 25"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead946f640ca9947c242",
-    "ticket_types": [
-      {
-        "name": "Shirt: AWF ComfortWash Island Reef SS Shirt with Pocket @ 20"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead946f640656847c23e",
-    "ticket_types": [
-      {
-        "name": "Shirt: AWF Navy ComfortWash SS Shirt with Pocket @ 20"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead85e4ad65d0a3dc1bd",
-    "ticket_types": [
-      {
-        "name": "Shirt: AWF Neon Orange Sport-Tek PosiCharge Competitor LS Shirt @ 25"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead813b96049131243ad",
-    "ticket_types": [
-      {
-        "name": "Shirt: AWF SS Grass Green Comfort Color T-Shirt with Pocket @ 20"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead832c2cd70aa2d2b50",
-    "ticket_types": [
-      {
-        "name": "Shirt: AWF Tag T-Shirt @ 20"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead746f640821a47c237",
-    "ticket_types": [
-      {
-        "name": "Managing Wildlife Book @ 49.95"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead7d504cb56ec227c9f",
-    "ticket_types": [
-      {
-        "name": "Membership Product Bundle - Friend @ 15"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead713b96008a71243a2",
-    "ticket_types": [
-      {
-        "name": "Membership Product Bundle - Supporter @ 30"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead613b96088e612439c",
-    "ticket_types": [
-      {
-        "name": "Membership Product Bundle - Sustainer @ 50"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead632c2cddc1a2d2b45",
-    "ticket_types": [
-      {
-        "name": "Membership Product Bundle - Sponsor @ 90"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead632c2cd2a142d2b41",
-    "ticket_types": [
-      {
-        "name": "Membership Product Bundle - Patron @ 140"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead55e4ad675b83dc1a5",
-    "ticket_types": [
-      {
-        "name": "ANC Feather Festival Pzazz @ 20"
-      }
-    ]
-  },
-  {
-    "product_id": "686fead5d504cbc354227c92",
-    "ticket_types": [
-      {
-        "name": "Big Backyard Campout Ticket @ 5"
+        "name": "ANC Fall Family Campout @ 5"
       }
     ]
   }
