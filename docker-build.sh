@@ -16,11 +16,9 @@ set -a
 source "$ENV_FILE"
 set +a
 
-# Override deployment-specific URLs (stage 1 = plain HTTP on port 4004).
-# When SSL is set up, update these to https://qrtickets.cyberizewebdevelopment.com
-# and rebuild the image.
-NEXT_PUBLIC_API_BASE_URL="http://cyberizewebdevelopment.com:4004"
-NEXT_PUBLIC_SOCKET_URL="http://cyberizewebdevelopment.com:4004"
+# Production URLs — nginx proxies 443 → localhost:4004
+NEXT_PUBLIC_API_BASE_URL="https://qrtickets.cyberizewebdevelopment.com"
+NEXT_PUBLIC_SOCKET_URL="https://qrtickets.cyberizewebdevelopment.com"
 
 echo "🔨 Building production image: $IMAGE_NAME"
 echo "   NEXT_PUBLIC_API_BASE_URL    = $NEXT_PUBLIC_API_BASE_URL"
