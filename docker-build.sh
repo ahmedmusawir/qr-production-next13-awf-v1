@@ -2,29 +2,45 @@
 set -euo pipefail
 
 IMAGE_NAME="qr-app"
+ENV_FILE=".env.production"
 
-# Stage 1 URL (before nginx + SSL).
+if [ ! -f "$ENV_FILE" ]; then
+  echo "❌ $ENV_FILE not found. Cannot build without it."
+  exit 1
+fi
+
+# Load NEXT_PUBLIC_* vars from .env.production so they get baked into the client bundle.
+# These are intentionally public (browser-safe) values.
+set -a
+# shellcheck disable=SC1090
+source "$ENV_FILE"
+set +a
+
+# Override deployment-specific URLs (stage 1 = plain HTTP on port 4004).
 # When SSL is set up, update these to https://qrtickets.cyberizewebdevelopment.com
 # and rebuild the image.
 NEXT_PUBLIC_API_BASE_URL="http://cyberizewebdevelopment.com:4004"
 NEXT_PUBLIC_SOCKET_URL="http://cyberizewebdevelopment.com:4004"
 
 echo "🔨 Building production image: $IMAGE_NAME"
-echo "   NEXT_PUBLIC_API_BASE_URL = $NEXT_PUBLIC_API_BASE_URL"
-echo "   NEXT_PUBLIC_SOCKET_URL   = $NEXT_PUBLIC_SOCKET_URL"
+echo "   NEXT_PUBLIC_API_BASE_URL    = $NEXT_PUBLIC_API_BASE_URL"
+echo "   NEXT_PUBLIC_SOCKET_URL      = $NEXT_PUBLIC_SOCKET_URL"
+echo "   NEXT_PUBLIC_SUPABASE_URL    = $NEXT_PUBLIC_SUPABASE_URL"
+echo "   NEXT_PUBLIC_GHL_LOCATION_ID = $NEXT_PUBLIC_GHL_LOCATION_ID"
 echo ""
 
 docker build \
   --build-arg NEXT_PUBLIC_API_BASE_URL="$NEXT_PUBLIC_API_BASE_URL" \
   --build-arg NEXT_PUBLIC_SOCKET_URL="$NEXT_PUBLIC_SOCKET_URL" \
+  --build-arg NEXT_PUBLIC_SUPABASE_URL="$NEXT_PUBLIC_SUPABASE_URL" \
+  --build-arg NEXT_PUBLIC_SUPABASE_ANON_KEY="$NEXT_PUBLIC_SUPABASE_ANON_KEY" \
+  --build-arg NEXT_PUBLIC_GHL_API_BASE_URL="$NEXT_PUBLIC_GHL_API_BASE_URL" \
+  --build-arg NEXT_PUBLIC_GHL_LOCATION_ID="$NEXT_PUBLIC_GHL_LOCATION_ID" \
   -t "$IMAGE_NAME" \
   .
 
 echo ""
 echo "✅ Build complete: $IMAGE_NAME"
 echo ""
-echo "To run locally:"
-echo "  docker run --rm -p 4004:4004 --env-file .env.production $IMAGE_NAME"
-echo ""
-echo "To run on the DO droplet:"
-echo "  docker run -d --restart unless-stopped -p 4004:4004 --env-file .env.production $IMAGE_NAME"
+echo "To start:  ./server-start.sh"
+echo "To stop:   ./server-stop.sh"
