@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createAdminClient } from "@/utils/supabase/admin-client";
 
+export const dynamic = "force-dynamic";
+
 /**
  * THIS DOES NOT REFRESH THE USERS. ALWAYS SHOWS THE SAME USERS
  * API route to fetch users from Supabase.

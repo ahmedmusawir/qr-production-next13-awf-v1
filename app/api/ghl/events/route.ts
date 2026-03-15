@@ -28,6 +28,8 @@
 
 import { NextRequest, NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";
+
 // Fetch product data from GHL API
 async function fetchProductIds(locationId: string) {
     // 🔍 DEBUG: Log environment variables

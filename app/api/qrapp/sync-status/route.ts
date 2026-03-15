@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 
+export const dynamic = "force-dynamic";
+
 const SYNC_STATUS_PATH = path.join(process.cwd(), "public", "sync_status.json");
 
 // Function to read sync status from file

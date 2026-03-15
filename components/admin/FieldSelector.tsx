@@ -17,7 +17,7 @@ const FieldSelector = ({ onFieldSelect }: FieldSelectorProps) => {
 
   // Filter fields to only include those with "QR Code" in the name
   const filteredFields = fields.filter((field) =>
-    field.field_name.includes("QR Code")
+    field.field_name.toLowerCase().includes("qr code")
   );
 
   return (

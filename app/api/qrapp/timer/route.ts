@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";
+
 // Trigger the timer by emitting an event to Socket.IO
 export async function GET() {
   const io = globalThis.io; // Use the globally available Socket.IO instance

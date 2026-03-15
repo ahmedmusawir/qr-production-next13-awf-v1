@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";
+
 // Fetch price data from GHL API
 async function fetchPriceData(productId: string, locationId: string) {
   const apiUrl = `https://services.leadconnectorhq.com/products/${productId}/price?locationId=${locationId}`;

@@ -8,8 +8,18 @@ RUN npm ci
 
 COPY . .
 
+# NEXT_PUBLIC_* vars must be baked into the client bundle at build time.
+# Pass these via --build-arg during docker build. Do NOT put them in .env.production.
+ARG NEXT_PUBLIC_API_BASE_URL
+ARG NEXT_PUBLIC_SOCKET_URL
+ENV NEXT_PUBLIC_API_BASE_URL=$NEXT_PUBLIC_API_BASE_URL
+ENV NEXT_PUBLIC_SOCKET_URL=$NEXT_PUBLIC_SOCKET_URL
+
+RUN npm run build
+
 EXPOSE 4004
 
+ENV NODE_ENV=production
 ENV NODE_OPTIONS="--max-old-space-size=4096"
 
-CMD ["node", "server.js"]
+CMD ["node", "server.prod.js"]

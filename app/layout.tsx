@@ -17,6 +17,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.scss";
+
+export const dynamic = "force-dynamic";
 import { Toaster } from "@/components/ui/toaster";
 import MainLayout from "@/components/layout/MainLayout";
 import { fetchAndGenerateTicketTypes } from "@/services/ticketServices";

@@ -52,7 +52,7 @@ export default function QrFullTestPage() {
       setUploadStatus("Backend test successful! URL received.");
     } catch (error) {
       console.error("Upload test failed:", error);
-      setUploadStatus(`Error: ${error.message}`);
+      setUploadStatus(`Error: ${error instanceof Error ? error.message : String(error)}`);
     } finally {
       setIsUploading(false);
     }

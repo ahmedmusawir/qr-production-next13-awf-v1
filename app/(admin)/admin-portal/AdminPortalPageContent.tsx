@@ -22,6 +22,7 @@ const AdminPortalPageContent = () => {
     currentPage,
     pageSize,
     setCurrentPage,
+    setSearchTerm,
   } = useGHLDataStore();
 
   const [isLoading, setIsLoading] = useState(true);
@@ -44,9 +45,12 @@ const AdminPortalPageContent = () => {
     }
   };
 
-  // Load once on mount
+  // Load once on mount, reset search on unmount
   useEffect(() => {
     loadData();
+    return () => {
+      setSearchTerm("");
+    };
   }, []);
 
   const handleRefresh = async () => {

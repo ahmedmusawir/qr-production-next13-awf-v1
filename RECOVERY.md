@@ -1,6 +1,8 @@
 # Recovery State
-Last action: Load-once cache + search + windowed pagination — COMPLETE
+Last action: Production build caching bug FIXED — all three issues resolved
 Pending: None
-Next step: Test in browser, then caching bug session (new branch, 2hr hard limit)
+Next step: Ship it. Session complete.
 Current branch: docker-1
 Docker: confirmed working
+Production build: confirmed working
+Caching bug: RESOLVED via force-dynamic on /api/qrapp/fields and /api/qrapp/events
