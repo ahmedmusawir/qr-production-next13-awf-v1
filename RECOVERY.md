@@ -1,8 +1,13 @@
 # Recovery State
-Last action: Fixed missing NEXT_PUBLIC_* vars in Docker build — all 6 vars now sourced from .env.production and baked into bundle
-Pending: Rebuild on DO box to verify superadmin users are visible
-Next step: git push → DO box git pull → ./server-stop.sh → ./docker-build.sh → ./server-start.sh → verify superadmin portal
-Current branch: docker-1
-DO box: 157.230.43.210 / http://cyberizewebdevelopment.com:4004
-Phase 1 status: App is up, pending final verification after NEXT_PUBLIC_* rebuild
-Phase 2: nginx + SSL (next session)
+Last action: Deployment documentation suite created — /docs/deployment/ (6 files)
+Pending: NONE
+Next step: Review docs, commit to main. See docs/deployment/ for all deployment docs. See doc/deploy.md for quick re-deploy steps.
+
+Live URL: https://qrtickets.cyberizewebdevelopment.com
+DO box: 157.230.43.210
+App path: ~/nextjs_apps/qrapp_prod/qr-production-next13-awf-v1
+Branch: main
+
+THE ONE THING TO REMEMBER:
+Every NEXT_PUBLIC_* var used client-side MUST be a build arg in Dockerfile + docker-build.sh.
+Runtime env vars (.env.production via --env-file) only reach server-side code.

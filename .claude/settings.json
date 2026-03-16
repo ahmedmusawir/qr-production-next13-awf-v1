@@ -2,13 +2,20 @@
   "hooks": {
     "PreToolUse": [
       {
-        "matcher": {
-          "tool": "Bash"
-        },
+        "matcher": "Edit|Write",
         "hooks": [
           {
             "type": "command",
-            "command": ".claude/hooks/block-off-mission.sh"
+            "command": "echo 'Claude attempting file modification...'"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Claude attempting shell command...'"
           }
         ]
       }
